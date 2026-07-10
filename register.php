@@ -1,5 +1,5 @@
 <?php
-
+session_start();
 include "config.php";
 include "recaptcha.php";
 include "csrf.php";
@@ -154,6 +154,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 include "includes/header.php";
 
+$csrf = generateCSRFToken();
 
 echo $message;
 
@@ -187,7 +188,7 @@ echo $message;
 <input 
 type="hidden" 
 name="csrf_token"
-value="<?php echo generateCSRFToken(); ?>">
+value="<?php echo $csrf; ?>">
 
 
 

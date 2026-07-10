@@ -53,17 +53,18 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         if(password_verify($password, $row["password"])) {
 
-
+            // Prevent Session Fixation
+            session_regenerate_id(true);
 
             $_SESSION["user_id"] = $row["id"];
 
             $_SESSION["username"] = $row["username"];
 
-
-
             header("Location: profile.php");
 
             exit();
+
+
 
 
 
