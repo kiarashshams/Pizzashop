@@ -8,30 +8,125 @@ include "includes/header.php";
 
 <!-- Hero Section -->
 
-<div class="p-5 mb-5 bg-light rounded-4">
+<div id="heroCarousel"
+class="carousel slide carousel-fade mb-5"
+data-bs-ride="carousel"
+data-bs-interval="4000">
 
-    <div class="container py-5">
+<div class="carousel-inner">
 
-        <h1 class="display-4 fw-bold">
+<div class="carousel-item active">
 
-            🍕 Fresh & Delicious Pizza
+<img src="assets/images/hero1.jpg"
+class="d-block w-100 hero-img">
 
-        </h1>
+<div class="carousel-caption">
 
-        <p class="fs-5">
+<h1 class="display-3 fw-bold">
 
-            Welcome to Pizza Shop.
-            Order your favorite pizza online quickly and easily.
+🍕 Fresh & Delicious Pizza
 
-        </p>
+</h1>
 
-        <a href="menu.php" class="btn btn-danger btn-lg">
+<p class="fs-4">
 
-            Order Now
+Welcome to Pizza Shop.<br>
+Order your favorite pizza online quickly and easily.
 
-        </a>
+</p>
 
-    </div>
+<a href="menu.php"
+class="btn btn-danger btn-lg">
+
+Order Now
+
+</a>
+
+</div>
+
+</div>
+
+<div class="carousel-item">
+
+<img src="assets/images/hero2.jpg"
+class="d-block w-100 hero-img">
+
+<div class="carousel-caption">
+
+<h1 class="display-3 fw-bold">
+
+ Try the Original and Tasty Italian Pizza
+
+</h1>
+
+<p class="fs-4">
+
+Made with fresh ingredients
+and authentic Italian recipes.
+
+</p>
+
+<a href="menu.php"
+class="btn btn-danger btn-lg">
+
+Order Now
+
+</a>
+
+</div>
+
+</div>
+
+<div class="carousel-item">
+
+<img src="assets/images/hero3.jpg"
+class="d-block w-100 hero-img">
+
+<div class="carousel-caption">
+
+<h1 class="display-3 fw-bold">
+
+❤️ Everything is Better with Pizza
+
+</h1>
+
+<p class="fs-4">
+
+Life tastes better
+with pizza and friends.
+
+</p>
+
+<a href="menu.php"
+class="btn btn-danger btn-lg">
+
+Order Now
+
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+<button class="carousel-control-prev"
+type="button"
+data-bs-target="#heroCarousel"
+data-bs-slide="prev">
+
+<span class="carousel-control-prev-icon"></span>
+
+</button>
+
+<button class="carousel-control-next"
+type="button"
+data-bs-target="#heroCarousel"
+data-bs-slide="next">
+
+<span class="carousel-control-next-icon"></span>
+
+</button>
 
 </div>
 
@@ -50,7 +145,7 @@ Popular Pizzas
         <div class="card shadow">
 
             <img
-            src="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=600"
+            src="https://media-assets.lacucinaitaliana.it/photos/61fd3af553797678cdac0c1f/1:1/w_2560%2Cc_limit/Pizza-margherita.jpg"
             class="card-img-top">
 
             <div class="card-body">
@@ -63,11 +158,11 @@ Popular Pizzas
 
                 </p>
 
-                <button class="btn btn-danger">
+                <a href="menu.php" class="btn btn-outline-danger">
 
-                    €8
+                    View Menu
 
-                </button>
+                </a>
 
             </div>
 
@@ -80,7 +175,7 @@ Popular Pizzas
         <div class="card shadow">
 
             <img
-            src="https://images.unsplash.com/photo-1594007654729-407eedc4be65?w=600"
+            src="https://cdn.aniagotuje.com/pictures/articles/2022/08/31553211-v-1080x1080.jpg"
             class="card-img-top">
 
             <div class="card-body">
@@ -93,11 +188,11 @@ Popular Pizzas
 
                 </p>
 
-                <button class="btn btn-danger">
+                <a href="menu.php" class="btn btn-outline-danger">
 
-                    €10
+                    View Menu
 
-                </button>
+                </a>
 
             </div>
 
@@ -110,24 +205,24 @@ Popular Pizzas
         <div class="card shadow">
 
             <img
-            src="https://images.unsplash.com/photo-1541745537411-b8046dc6d66c?w=600"
+            src="https://www.recipetineats.com/uploads/2024/05/Pizza-Capricciosa_8.jpg"
             class="card-img-top">
 
             <div class="card-body">
 
-                <h5>BBQ Chicken</h5>
+                <h5>Capricciosa</h5>
 
                 <p>
 
-                    Chicken with BBQ Sauce
+                    tomato sauce, mozzarella , mushrooms, prosciutto and black olives
 
                 </p>
 
-                <button class="btn btn-danger">
+                <a href="menu.php" class="btn btn-outline-danger">
 
-                    €11
+                    View Menu
 
-                </button>
+                </a>
 
             </div>
 
